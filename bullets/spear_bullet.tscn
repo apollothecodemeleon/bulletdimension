@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://63p1hbuylbdi"]
+
+[ext_resource type="Texture2D" uid="uid://vvlagf0siah2" path="res://icon.svg" id="1_jmpg1"]
+[ext_resource type="Script" uid="uid://drnurpjpmso2x" path="res://bullets/spear_bullet.gd" id="1_uhq16"]
+
+[node name="SpearBullet" type="Node2D"]
+script = ExtResource("1_uhq16")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(-1.2337223, 0.1696737)
+texture = ExtResource("1_jmpg1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-72, 16)
+rotation = -0.75427884
+scale = Vector2(-0.07352219, 0.36799976)
+texture = ExtResource("1_jmpg1")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(-72, -15.999998)
+rotation = 0.80820286
+scale = Vector2(-0.07352219, 0.36799976)
+texture = ExtResource("1_jmpg1")

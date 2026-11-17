@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgj3mt7f0e8vv"]
+
+[ext_resource type="Script" uid="uid://dojfe8ieu0oka" path="res://bullets/bulletring.gd" id="1_gn5ks"]
+[ext_resource type="PackedScene" uid="uid://cp2qyhpt4uhsa" path="res://bullets/base_bullet.tscn" id="1_punyw"]
+
+[node name="Bulletring" type="Node2D"]
+script = ExtResource("1_gn5ks")
+
+[node name="Bullet" parent="." instance=ExtResource("1_punyw")]
+position = Vector2(75, 50)
+
+[node name="Bullet2" parent="." instance=ExtResource("1_punyw")]
+position = Vector2(75, -50)
+
+[node name="Bullet3" parent="." instance=ExtResource("1_punyw")]
+position = Vector2(0, 75)
+
+[node name="Bullet4" parent="." instance=ExtResource("1_punyw")]
+position = Vector2(-75, -50)
+
+[node name="Bullet5" parent="." instance=ExtResource("1_punyw")]
+position = Vector2(-75, 50)
+
+[node name="Bullet6" parent="." instance=ExtResource("1_punyw")]
+position = Vector2(0, -75)

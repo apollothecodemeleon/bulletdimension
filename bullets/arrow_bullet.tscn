@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://rniihyquct70"]
+
+[ext_resource type="Script" uid="uid://b6hr05phqllpo" path="res://bullets/arrow_bullet.gd" id="1_5ssne"]
+[ext_resource type="PackedScene" uid="uid://cp2qyhpt4uhsa" path="res://bullets/base_bullet.tscn" id="2_4bp3c"]
+
+[node name="Arrow" type="Node2D"]
+script = ExtResource("1_5ssne")
+
+[node name="Bullet" parent="." instance=ExtResource("2_4bp3c")]
+scale = Vector2(2, 2)
+
+[node name="Marker" type="ColorRect" parent="."]
+visible = false
+offset_left = -27.0
+offset_top = -27.0
+offset_right = 27.0
+offset_bottom = 27.0
+color = Color(1, 0, 0, 1)

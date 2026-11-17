@@ -1,0 +1,110 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwh8gry35cki"]
+
+[ext_resource type="Script" uid="uid://46fk31y315ww" path="res://boss_1.gd" id="1_a8swx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2nlvs"]
+
+[node name="Boss1" type="Node2D"]
+script = ExtResource("1_a8swx")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_2nlvs")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -112.0
+offset_top = -112.0
+offset_right = 112.0
+offset_bottom = 112.0
+pivot_offset = Vector2(112, 112)
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 210.0
+offset_bottom = 210.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect2/ColorRect"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 182.0
+offset_bottom = 182.0
+color = Color(1, 1, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect2/ColorRect/ColorRect"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 154.0
+offset_bottom = 154.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+z_index = 1
+offset_left = -34.0
+offset_top = -34.0
+offset_right = 190.0
+offset_bottom = 190.0
+scale = Vector2(0.3, 0.3)
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect4"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 210.0
+offset_bottom = 210.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect4/ColorRect"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 182.0
+offset_bottom = 182.0
+color = Color(1, 1, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect4/ColorRect/ColorRect"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 154.0
+offset_bottom = 154.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_top = -111.0
+offset_right = 224.0
+offset_bottom = 113.0
+rotation = 0.7853982
+scale = Vector2(0.7, 0.7)
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect3"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 210.0
+offset_bottom = 210.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect3/ColorRect"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 182.0
+offset_bottom = 182.0
+color = Color(1, 1, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect3/ColorRect/ColorRect"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 154.0
+offset_bottom = 154.0
+color = Color(0, 0, 0, 1)

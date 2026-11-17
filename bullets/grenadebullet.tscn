@@ -1,0 +1,87 @@
+[gd_scene load_steps=3 format=3 uid="uid://brghmhxu0othq"]
+
+[ext_resource type="Script" uid="uid://1qfy0xampngu" path="res://bullets/grenadebullet.gd" id="1_aeuwc"]
+[ext_resource type="Texture2D" uid="uid://vvlagf0siah2" path="res://icon.svg" id="2_tdqhc"]
+
+[node name="Grenadebullet" type="Node2D"]
+script = ExtResource("1_aeuwc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_tdqhc")
+
+[node name="ColorRect" type="ColorRect" parent="Sprite2D"]
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+color = Color(0, 0.74509805, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Sprite2D"]
+offset_left = -64.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = 64.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Sprite2D"]
+offset_left = -64.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = 64.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Sprite2D"]
+offset_left = -64.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = 64.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="Sprite2D"]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 64.0
+offset_bottom = 64.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="Sprite2D"]
+offset_left = -20.0
+offset_top = 24.0
+offset_right = 20.0
+offset_bottom = 64.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="Sprite2D"]
+offset_left = -64.0
+offset_top = -64.0
+offset_right = -24.0
+offset_bottom = -24.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect10" type="ColorRect" parent="Sprite2D"]
+offset_left = -64.0
+offset_top = -20.0
+offset_right = -24.0
+offset_bottom = 20.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="Sprite2D"]
+offset_left = 24.0
+offset_top = -20.0
+offset_right = 64.0
+offset_bottom = 20.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="Sprite2D"]
+offset_left = 24.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = -24.0
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="Sprite2D"]
+offset_left = -20.0
+offset_top = -64.0
+offset_right = 20.0
+offset_bottom = -24.0
+color = Color(1, 0, 0, 1)

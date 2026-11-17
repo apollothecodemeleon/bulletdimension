@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp2qyhpt4uhsa"]
+
+[ext_resource type="Script" uid="uid://tknuohp1c428" path="res://bullets/base_bullet.gd" id="1_sxnja"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h1bej"]
+size = Vector2(24, 24)
+
+[node name="Bullet" type="Area2D"]
+script = ExtResource("1_sxnja")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+
+[node name="ColorRect" type="ColorRect" parent="Sprite2D"]
+offset_left = -60.0
+offset_top = -60.0
+offset_right = 59.999985
+offset_bottom = 59.999985
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Sprite2D"]
+z_index = -1
+offset_left = -66.0
+offset_top = -66.0
+offset_right = 66.0
+offset_bottom = 66.0
+color = Color(0, 0.47058824, 1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_h1bej")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
